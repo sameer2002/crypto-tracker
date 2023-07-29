@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+html{
+    overflow-y: scroll;
+}
+.my-nav {
+    border-bottom: 1px solid black;
+    position: sticky;
+    
+    align-items: center;
+    background-color: black;
+    top: 0px;
+    height: 80px;
+    z-index: 25;
+  }
+  .my-nav-inside{
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    align-items: center;
+  }
+  .logo {
+    width: 50%;
+    align-items: center;
+    margin-left: 30px;
+  }
+  .logo a{
+    font-size: 18px;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+  }
+  .nav-list{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+  }
+  .nav-list a{
+    color: gray;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    
+  }
+  .nav-list a:hover{
+    color: white;
+  }
+  .end-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50%;
+  }
+  #btn{
+    background-color: #2196F3;
+    border:1px solid #2196F3;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+  }
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: gray;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+
+
+
+
+  #container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    background-color: black;
+  }
+  
+  
+  .pages .page {
+    display: none;
+  }
+
+  .pages .page.active {
+    display: block;
+  }
+  .tabs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .tab {
+    color: white;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid black;
+    font-size: 18px;
+    width: 50%;
+    text-align: center;
+  }
+  
+  .page {
+    display: none;
+    padding: 10px;
+  }
+  
+  .tab.active {
+    display: block;
+    color: #2196F3;
+    border-bottom: 2px solid #2196F3;
+    width: 50%;
+    text-align: center;
+  }
+  
+  .page.active {
+    display: block;
+  }
+
+  body{
+    background-color: black;
+    color: white;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td {
+  border-bottom: 1px solid gray;
+}
+
+#searchInput{
+  border: 1px solid gray;
+  background-color: black;
+  width: 20%;
+  padding: 15px;
+  margin: 25px 10px;
+  color: white;
+  border-radius: 10px;
+}
+
+button{
+  border: 1px solid gray;
+  background-color: black;
+  color: white;
+  padding: 15px;
+  margin: 25px 5px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+
+
+.positive-change {
+    color: green!important;
+    border: 2px solid green;
+    width: 85px;
+    text-align: center;
+    border-radius: 10px;
+   
+  }
+  
+  .negative-change {
+    color: red!important;
+    border: 2px solid red;
+    width: 85px;
+    text-align: center;
+    border-radius: 10px;
+   
+  }
+
+  .current-prive{
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .positive-change-price{
+    color: green!important;
+  }
+  .negative-change-price{
+    color: red!important;
+  }
+
+  td{
+    padding: 20px ;
+    text-align: left;
+    /* border-bottom: 2px solid gray */
+    
+  }
+  #cryptoTable{
+    margin: 0 auto;
+  }
+
+  #data1{
+    padding-right: 0;
+  }
+  #card_lists{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(245px, 2fr));
+    grid-gap: 3rem;
+  }
+  td h2{
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+  td h3{
+    font-size: 14px;
+    color: grey;
+  }
+  .card{
+    background-color: #1B1B1B;
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+  }
+  .title-out{
+    margin: 20px;
+  }
+  .title{
+    display: flex;
+   align-items: center;
+   
+   margin-bottom: 2rem;
+   margin-top: 1rem;
+  }
+  .bit-names{
+    margin-left: 1rem;
+  }
+  .bit-name{
+    color: gray;
+    font-size: 12px;
+  }
+  .bit-id{
+    text-transform: uppercase;
+  }
+    .market-det{
+      display: grid;
+      gap: 2rem;
+    }
+    .total-amt
+    {
+        color: gray;
+        font-size: 12px;
+    }
+   .market-cap
+   {
+    color: gray;
+    font-size: 12px;
+   }
+   

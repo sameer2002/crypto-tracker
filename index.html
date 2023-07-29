@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CryptoTracker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ruda:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+  <nav class="my-nav ">
+    <div class="my-nav-inside">
+      <div class="logo py-3 pe-2">
+        <a href="#">CryptoTracker</a>
+      </div>
+    
+    <div class="end-nav">
+      <label class="switch">
+        <input type="checkbox">
+        <span class="slider round"></span>
+      </label>
+      <ul class="nav-list">
+        <li class="items">
+          <a href="#" >Home</a>
+        </li>
+        <li class="items">
+          <a href="#">Compare</a>
+        </li>
+        <li class="items">
+          <a href="#">WatchList</a>
+        </li>
+      </ul>
+      <button id="btn">Dashboard</button>
+    </div>
+  </div>
+ 
+  </nav>
+ 
+  <div class="grid-list-container">
+    <div class="tabs">
+      <div class="tab active" onclick="showPage(0)">Grid
+      
+      </div>
+      <div class="tab" onclick="showPage(1)">List</div>
+    </div>
+  </div>
+  
+  <div id="container"> 
+   
+    
+    <div class="pages">
+      <div class="page active">
+        <div id="card_lists">
+          <!--dynamicaly added-->
+        </div>
+      </div>
+      <div class="page">
+        <table id="cryptoTable">
+         
+          <tbody id="tableBody">
+           
+          </tbody>
+        </table>
+      </div>
+    </div>
+    
+    
+  </div>
+  
+  <script src="/script.js"></script>
+    <script src="/intro.js"></script>
+    
+    
+</body>
+</html>
