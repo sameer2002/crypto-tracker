@@ -17,6 +17,13 @@ html{
     height: 80px;
     z-index: 25;
   }
+  .grid-list-container{
+    position: sticky;
+    background-color: black;
+    top: 81px;
+    height: 45px;
+    z-index: 10;
+  }
   .my-nav-inside{
     display: flex;
     justify-content: space-between;
@@ -154,6 +161,7 @@ html{
     align-items: center;
   }
   .tab {
+    cursor: pointer;
     color: white;
     padding: 10px;
     border: none;
@@ -173,6 +181,7 @@ html{
     color: #2196F3;
     border-bottom: 2px solid #2196F3;
     width: 50%;
+    cursor: pointer;
     text-align: center;
   }
   
@@ -189,9 +198,7 @@ table {
   border-collapse: collapse;
 }
 
-td {
-  border-bottom: 1px solid gray;
-}
+
 
 #searchInput{
   border: 1px solid gray;
